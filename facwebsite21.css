@@ -1,38 +1,79 @@
-[data-tab-content] {
-    display: none; /* make the tab content hidden */
-}
+@import url('https://fonts.googleapis.com/css2?family=Arapey:ital@1&family=Caveat&family=Nothing+You+Could+Do&display=swap');
 
-.active[data-tab-content] {
-    display: block;
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
 }
 body {
     padding: 0;
     margin: 0;
+    background-color: rgb(247, 246, 244);
 }
 
-.tabs {
+/* Tab Bar Design*/
+.tab-content {
+    display: none; /* make the tab content hidden */
+}
+
+.active.tab-content {
+    display: block;
+    padding: 15px;
+}
+
+/* tabs container*/
+.tabs {         
     display: flex;
     justify-content: space-around;
+    align-items: center;
     list-style-type: none;
-    margin: 0;
-    padding: 0;
-    border-bottom: 1px solid black;
+    border-bottom: 3px solid black;
+    height: 3vh;
+    position: fixed; 
+    width: 100%;
+    background-color: white;
+ 
 }
 
 .tab {
-    cursor: pointer; /* !! not loading WHY?? */
-    padding: 10px;
+    text-decoration: none; /* text-decoration property to remove underline from anchor tag -->*/
+    font-weight: bold;
+    font-size: 20px;
+    color: black;
 }
 
 .tab.active {
-    background-color: rgb(216, 125, 165);
+    background-color: rgba(22, 187, 0, 0.686)
+}
+.tab:hover { 
+    background-color: rgb(255, 225, 0);
 }
 
-.tab:hover {   /* !! Hover doesnt seem to work!! */
-    background-color: palevioletred;
+/* Content Boarder Design*/
+.content-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative; z-index: -1; 
+    background-size: cover;   
+    
+    
 }
 
-.tab-content {
-    margin-left: 200px;
-    margin-right: 200px;
+h1 {
+    text-align: center;
+    font-size: 50px;
 }
+
+.paragraph{
+    
+    font-family: 'Arapey', serif;
+    font-family: 'Caveat', cursive;
+    font-family: 'Nothing You Could Do', cursive;
+    font-size: 20px;
+    text-align: justify;
+    padding: 10px;
+    position: absolute;
+    z-index: 1; /* only worked when there is position */
+}
+
