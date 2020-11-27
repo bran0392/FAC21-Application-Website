@@ -6,19 +6,9 @@
     box-sizing: border-box;
 }
 body {
-    padding: 0;
-    margin: 0;
+    /* padding: 0;
+    margin: 0; */
     background-color: rgb(247, 246, 244);
-}
-
-/* Tab Bar Design*/
-.tab-content {
-    display: none; /* make the tab content hidden */
-}
-
-.active.tab-content {
-    display: block;
-    padding: 15px;
 }
 
 /* tabs container*/
@@ -32,7 +22,6 @@ body {
     position: fixed; 
     width: 100%;
     background-color: white;
- 
 }
 
 .tab {
@@ -51,29 +40,40 @@ body {
 
 /* Content Boarder Design*/
 .content-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative; z-index: -1; 
-    background-size: cover;   
+    position: relative; 
+    z-index: -1; 
+    top: 3vh;
+    border: 10px solid red;
+     
     
-    
+}
+/* Tab Content Design*/
+.tab-content {
+    display: none; /* make the tab content hidden */ 
+}
+
+.active.tab-content {
+    display: block;
 }
 
 h1 {
     text-align: center;
     font-size: 50px;
+    border: 10px solid rgb(255, 196, 0);
 }
 
-.paragraph{
-    
+.paragraph {
     font-family: 'Arapey', serif;
     font-family: 'Caveat', cursive;
     font-family: 'Nothing You Could Do', cursive;
     font-size: 20px;
-    text-align: justify;
-    padding: 10px;
-    position: absolute;
-    z-index: 1; /* only worked when there is position */
+    text-align: justify; 
+    padding:13%;
+    background: url("./Image/backgroundLeave01.png"), url("./Image/backgroundLeave02.png") ;
+    background-size: 100%, 100%;
+    background-repeat: no-repeat, no-repeat;
+    background-position: top, bottom;
 }
+
+
 
