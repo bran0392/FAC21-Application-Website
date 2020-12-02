@@ -24,6 +24,23 @@ tabs.forEach(tab => {
   
 })
 
+// Image Carousel
+var slideIndex = 0;
+var timer = setInterval(showAllSlides, 3000);
 
+function showAllSlides(){
+  var i; //iterator
+  var picture = document.getElementsByClassName("slides"); //grab slide
+  
+  for(i=0; i < picture.length; i++){
+    picture[i].style.display= "none"; //hidding the image that is not iterated on
+    console.log(picture);
+  }
 
- 
+  slideIndex++;
+  if(slideIndex > picture.length){
+    slideIndex = 1;
+  }
+  picture[slideIndex-1].style.display = "block";
+
+}

@@ -6,9 +6,8 @@
     box-sizing: border-box;
 }
 body {
-    /* padding: 0;
-    margin: 0; */
-    background-color: rgb(247, 246, 244);
+    background-color: rgb(247, 247, 247);
+
 }
 
 /* tabs container*/
@@ -17,7 +16,7 @@ body {
     justify-content: space-around;
     align-items: center;
     list-style-type: none;
-    border-bottom: 3px solid black;
+    border-bottom: 3px solid darkolivegreen;
     height: 3vh;
     position: fixed; 
     width: 100%;
@@ -32,48 +31,136 @@ body {
 }
 
 .tab.active {
-    background-color: rgba(22, 187, 0, 0.686)
+    background-color: rgba(121, 153, 66, 0.809);
 }
 .tab:hover { 
-    background-color: rgb(255, 225, 0);
+    background-color: rgb(238, 222, 102);
 }
 
 /* Content Boarder Design*/
 .content-container {
     position: relative; 
     z-index: -1; 
-    top: 3vh;
-    border: 10px solid red;
-     
-    
+    top: 3vh;  
 }
+
+.content-container p{
+    display: block;
+    margin-bottom: 1em;
+}
+
 /* Tab Content Design*/
 .tab-content {
     display: none; /* make the tab content hidden */ 
+
 }
 
 .active.tab-content {
     display: block;
-}
-
-h1 {
-    text-align: center;
-    font-size: 50px;
-    border: 10px solid rgb(255, 196, 0);
-}
-
-.paragraph {
     font-family: 'Arapey', serif;
     font-family: 'Caveat', cursive;
     font-family: 'Nothing You Could Do', cursive;
     font-size: 20px;
-    text-align: justify; 
-    padding:13%;
-    background: url("./Image/backgroundLeave01.png"), url("./Image/backgroundLeave02.png") ;
+    font-weight: 600;
+    text-align: center; 
+    justify-content: center;
+    
+    background: url("./Image/Largerbackground01.png"), url("./Image/Largerbackground02.png") ;
     background-size: 100%, 100%;
     background-repeat: no-repeat, no-repeat;
-    background-position: top, bottom;
+    background-position: top, bottom, center;
+    
+    margin-bottom: 3vh;
+    padding:13%;  
+    
 }
 
 
+
+h1 {
+    text-align: center;
+    font-size: 50px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    padding: 3vh; 
+}
+
+
+/* Bottom Design */
+
+footer{
+    display: inline-block;
+    width: 100%;
+    border-top: 3px solid darkolivegreen;
+    padding-top: 0.5vh;
+}
+
+.icons-container{
+    border: 5px solid darkred;
+    text-align: left;
+    width: 30%;
+    display: flex;
+    justify-content: space-around;
+    flex-di;
+}
+
+.credit{
+    text-align: right;
+    font-style: italic;
+    flex: 1;
+}
+
+/* image carousel */
+.slides-container{
+    width: auto;
+    max-width: 610px;
+    max-height: 360px;
+    position: relative;
+    margin: 0 auto;
+    border: 5px solid red;
+}
+
+.slides img{
+    width: 600px;
+    height: 350px;
+
+}
+
+.slides{
+    display: block;
+    width: 100%;
+}
+
+.slides-controls{
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 100%;
+    display: flex;
+}
+
+#prev-button{
+    position: absolute;
+    top: 50%;
+    z-index: 10;
+    left: 3%;
+    font-size: 20px;
+    color: white;
+    cursor: pointer;
+    border: none;
+    background: transparent;
+    opacity: 0.8;
+}
+
+#next-button{
+    position: absolute;
+    top: 50%;
+    z-index: 10;
+    right: 3%;
+    font-size: 20px;
+    color: white;
+    cursor: pointer;
+    border: none;
+    background: transparent;
+    opacity: 0.8;
+}
 
