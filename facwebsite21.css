@@ -7,7 +7,8 @@
 }
 body {
     background-color: rgb(247, 247, 247);
-
+    position: relative;
+    height: 100%;
 }
 
 /* tabs container*/
@@ -68,60 +69,88 @@ body {
     background: url("./Image/Largerbackground01.png"), url("./Image/Largerbackground02.png") ;
     background-size: 100%, 100%;
     background-repeat: no-repeat, no-repeat;
-    background-position: top, bottom, center;
+    background-position: top, bottom;
     
-    margin-bottom: 3vh;
+    width: 100%;
     padding:13%;  
-    
+    margin-bottom: 5vh;
 }
 
 
 
 h1 {
+    display: block;
     text-align: center;
     font-size: 50px;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    padding: 3vh; 
+    font-family: Georgia, 'Times New Roman', Times, serif;   
 }
 
 
 /* Bottom Design */
 
 footer{
-    display: inline-block;
-    width: 100%;
+    
     border-top: 3px solid darkolivegreen;
-    padding-top: 0.5vh;
+    height: 3vh;
+    display: flex;
+    justify-content: space-between;
+    
+    
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+ 
+ 
+ 
+    border:5px solid rgb(250, 1, 200);
 }
 
 .icons-container{
-    border: 5px solid darkred;
     text-align: left;
-    width: 30%;
+    width: 20%;
     display: flex;
-    justify-content: space-around;
-    flex-di;
+    justify-content: space-between;
 }
 
-.credit{
+footer p{
     text-align: right;
-    font-style: italic;
-    flex: 1;
+    font-style: italic;  
+    font-weight: bold;
+    padding-right: 1vw;
+    padding-top: 0.5vh;
 }
 
 /* image carousel */
+
 .slides-container{
-    width: auto;
+    padding-top: 25%;
+    padding-bottom: 25%;
+    display: flex;
+    justify-content: center;
+
+}
+.slides{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+
     max-width: 610px;
     max-height: 360px;
-    position: relative;
-    margin: 0 auto;
-    border: 5px solid red;
+    
+
+    border:5px solid black;
+
+
 }
 
 .slides img{
     width: 600px;
     height: 350px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
 
 }
 
@@ -164,3 +193,5 @@ footer{
     opacity: 0.8;
 }
 
+@media only screen and (max-width: 600px) {
+}

@@ -25,6 +25,8 @@ tabs.forEach(tab => {
 })
 
 // Image Carousel
+
+//Automatic Play
 var slideIndex = 0;
 var timer = setInterval(showAllSlides, 3000);
 
@@ -42,5 +44,7 @@ function showAllSlides(){
     slideIndex = 1;
   }
   picture[slideIndex-1].style.display = "block";
+
+  
 
 }
