@@ -9,6 +9,8 @@ body {
     background-color: rgb(247, 247, 247);
     position: relative;
     height: 100%;
+    width: 100%;
+    border:solid rgb(253, 250, 250);
 }
 
 /* tabs container*/
@@ -95,15 +97,10 @@ footer{
     display: flex;
     justify-content: space-between;
     
-    
     position: absolute;
     bottom: 0;
     width: 100%;
- 
- 
- 
-    border:5px solid rgb(250, 1, 200);
-}
+ }
 
 .icons-container{
     text-align: left;
@@ -122,50 +119,29 @@ footer p{
 
 /* image carousel */
 
+
 .slides-container{
-    padding-top: 25%;
-    padding-bottom: 25%;
-    display: flex;
-    justify-content: center;
-
-}
-.slides{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: auto;
-
+    width: auto;
     max-width: 610px;
-    max-height: 360px;
-    
-
+    max-height: 350px;
+    position: relative;
+    margin: 0 auto;
     border:5px solid black;
-
-
 }
 
 .slides img{
-    width: 600px;
-    height: 350px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: auto;
+ width: 600px;
+ height: 340px;
 
-}
-
-.slides{
-    display: block;
-    width: 100%;
 }
 
 .slides-controls{
-    position: absolute;
-    top: 50%;
-    left: 0;
-    width: 100%;
-    display: flex;
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  display: flex;
 }
+
 
 #prev-button{
     position: absolute;
@@ -173,9 +149,8 @@ footer p{
     z-index: 10;
     left: 3%;
     font-size: 20px;
-    color: white;
+    color:white;
     cursor: pointer;
-    border: none;
     background: transparent;
     opacity: 0.8;
 }
@@ -188,10 +163,12 @@ footer p{
     font-size: 20px;
     color: white;
     cursor: pointer;
-    border: none;
     background: transparent;
     opacity: 0.8;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 800px) {
+    .slides-container{
+        width: 100%;
+    }
 }
