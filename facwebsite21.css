@@ -43,8 +43,10 @@ body {
 /* Content Boarder Design*/
 .content-container {
     position: relative; 
-    z-index: -1; 
+    
     top: 3vh;  
+    min-height: 100vh;
+    margin-bottom: 10vh;
 }
 
 .content-container p{
@@ -91,7 +93,6 @@ h1 {
 /* Bottom Design */
 
 footer{
-    
     border-top: 3px solid darkolivegreen;
     height: 3vh;
     display: flex;
@@ -100,6 +101,7 @@ footer{
     position: absolute;
     bottom: 0;
     width: 100%;
+    
  }
 
 .icons-container{
@@ -107,6 +109,7 @@ footer{
     width: 20%;
     display: flex;
     justify-content: space-between;
+    
 }
 
 footer p{
@@ -143,6 +146,9 @@ footer p{
 }
 
 
+
+
+/* 
 #prev-button{
     position: absolute;
     top: 50%;
@@ -171,4 +177,4 @@ footer p{
     .slides-container{
         width: 100%;
     }
-}
+} */
