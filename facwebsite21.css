@@ -124,26 +124,29 @@ footer p{
 
 
 .slides-container{
-    width: auto;
+    /* width: auto;
     max-width: 610px;
-    max-height: 350px;
+    max-height: 310px; 
     position: relative;
-    margin: 0 auto;
+    margin: 0 auto;*/
     border:5px solid black;
+    max-width: 100%;
+    height: auto;
 }
 
 .slides img{
- width: 600px;
- height: 340px;
+
+    max-width: 100%;
+    height: auto;
 
 }
 
-.slides-controls{
+/* .slides-controls{
   position: absolute;
   top: 50%;
   width: 100%;
   display: flex;
-}
+} */
 
 
 
