@@ -18,12 +18,13 @@ body {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    list-style-type: none;
+    list-style-type: none; /*take the bulletpoint away*/
     border-bottom: 3px solid darkolivegreen;
     height: 3vh;
     position: fixed; 
     width: 100%;
     background-color: white;
+    z-index: 99;
 }
 
 .tab {
@@ -132,12 +133,13 @@ footer p{
     border:5px solid black;
     max-width: 100%;
     height: auto;
+    
 }
 
 .slides img{
-
-    max-width: 100%;
+    width: 100%;
     height: auto;
+    background-size: contain;
 
 }
 
@@ -150,34 +152,41 @@ footer p{
 
 
 
-
-/* 
-#prev-button{
-    position: absolute;
-    top: 50%;
-    z-index: 10;
-    left: 3%;
-    font-size: 20px;
-    color:white;
-    cursor: pointer;
-    background: transparent;
-    opacity: 0.8;
-}
-
-#next-button{
-    position: absolute;
-    top: 50%;
-    z-index: 10;
-    right: 3%;
-    font-size: 20px;
-    color: white;
-    cursor: pointer;
-    background: transparent;
-    opacity: 0.8;
-}
-
-@media only screen and (max-width: 800px) {
-    .slides-container{
+@media only screen and (max-device-width: 480px) {
+    div{
         width: 100%;
     }
-} */
+
+   blockquote{
+       font-size: 0.5rem;
+   }
+
+    p{
+        font-size: 0.5rem;
+    }
+
+    h1{
+        font-size: 1rem;
+    }
+
+    header{
+        float: none;
+        width: auto;
+    }
+
+    .tab{
+        font-size: 50%;
+    }
+
+    a{
+        font-size: 0.5rem;
+    }
+    
+    img.responsive{
+        width: 480px;
+        height: auto;
+        
+    }
+
+ 
+} 
