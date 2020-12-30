@@ -125,31 +125,22 @@ footer p{
 
 
 .slides-container{
-    /* width: auto;
-    max-width: 610px;
-    max-height: 310px; 
+    width: auto;
     position: relative;
-    margin: 0 auto;*/
-    border:5px solid black;
-    max-width: 100%;
-    height: auto;
+    margin: 0 auto; 
+    height: inherit;
+    max-height: 100%;
     
 }
 
 .slides img{
-    width: 100%;
-    height: auto;
+    width: 100%; 
     background-size: contain;
+    height: 650px;
+    border:5px solid black;
+    
 
 }
-
-/* .slides-controls{
-  position: absolute;
-  top: 50%;
-  width: 100%;
-  display: flex;
-} */
-
 
 
 @media only screen and (max-device-width: 480px) {
